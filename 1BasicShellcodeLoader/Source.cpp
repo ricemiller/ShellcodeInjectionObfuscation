@@ -10,7 +10,7 @@ int main() {
 
 	// Allocate memory
 	basePageAddress = VirtualAlloc(
-		NULL,						//LPVOID lpAddress,
+		NULL,				//LPVOID lpAddress,
 		(SIZE_T)sizeof(shellcode),	//SIZE_T dwSize,
 		MEM_COMMIT | MEM_RESERVE,	//DWORD  flAllocationType,
 		PAGE_EXECUTE_READWRITE		//DWORD  flProtect
